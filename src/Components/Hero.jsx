@@ -47,7 +47,7 @@ const Hero = () => {
   href="https://form.typeform.com/to/Oxph7bfP"
   target="_blank"
   rel="noopener noreferrer"
-  className="callback-button mt-8 inline-flex items-center gap-2 text-1.5xl px-9 py-5 text-black bg-green-400"
+  className="callback-button mt-8 inline-flex items-center gap-2 text-1.5xl px-9 py-5 text-black bg-green-200"
   aria-label="Request a callback"
 >
   <SlCallIn /> Request Callback
