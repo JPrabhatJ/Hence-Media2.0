@@ -7,17 +7,54 @@ import { IoTime } from "react-icons/io5";
 import { MdOutlineMediation } from "react-icons/md";
 import { IoStatsChart } from "react-icons/io5";
 import { FaHandshake } from "react-icons/fa6";
+import { SlCallIn } from "react-icons/sl";
+import '../index.css';
 
 
 
 const Hero = () => {
  return (
   <div className="w-full">
-   <section className="relative w-full h-screen bg-black shadow-md border border-green-500">
-        <video autoPlay muted loop className="w-full h-full object-cover">
-          <source src="/headermedia(HM).mp4" type="video/mp4" />
-          Your browser does not support the video tag.
-        </video>
+ <section className="relative w-full h-screen bg-black shadow-md border border-green-500">
+  <video
+    autoPlay
+    muted
+    loop
+    playsInline
+    className="absolute inset-0 w-full h-full object-cover"
+  >
+    <source src="/headermedia(HM).mp4" type="video/mp4" />
+    Your browser does not support the video tag.
+  </video>
+</section>
+
+  {/* Section 2: Join Hence Info */}
+      <section className="join-hence-section relative text-white text-center px-4 py-30 bg-gradient-to-b mb-4 from-black to-blue-900">
+        <div className="content max-w-4xl mx-auto">
+          <h1 className="text-4xl md:text-5xl font-bold mb-4">We are best at what we do</h1>
+          <h2 className="text-xl md:text-2xl mb-6">By ex-TVF, OML, AIB and team of cool and OG MEMERS👑</h2>
+
+          <div className="stats flex flex-wrap justify-center gap-6 text-green-400 font-semibold">
+            <div className="stat-item">970+ Campaigns overall</div>
+            <span className="separator hidden md:inline">|</span>
+            <div className="stat-item">Web, Reels, Youtube, Product Launch</div>
+            <span className="separator hidden md:inline">|</span>
+            <div className="stat-item">990+ Millions Views </div>
+            <span className="separator hidden md:inline">|</span>
+            <div className="stat-item">Viral Content</div>
+          </div>
+<a
+  href="https://form.typeform.com/to/Oxph7bfP"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="callback-button mt-8 inline-flex items-center gap-2 text-1.5xl px-9 py-5 text-black bg-green-400"
+  aria-label="Request a callback"
+>
+  <SlCallIn /> Request Callback
+</a>
+
+        </div>
+        {/* <div className="bottom-blur absolute bottom-0 left-0 w-full h-20"></div> */}
       </section>
       
 {/*Our Services */}
@@ -244,8 +281,6 @@ const Hero = () => {
 
   {/* Section 2 */}
 <div className="flex flex-col md:flex-row items-center mb-16 max-w-6xl mx-auto">
-  
-
     <div className="w-full md:w-1/2 p-4">
     <div className="relative w-full h-[250px] md:h-[350px] flipper rounded-lg border-4 shadow-md">
       <div className="front">
@@ -255,7 +290,7 @@ const Hero = () => {
           className="w-full h-full object-cover rounded-lg"
         />
       </div>
-           <h4 className='text-2xl font-bold text-center'>Elvish Yadav & Abhishek Malhaan</h4>
+           <h4 className='text-2xl font-bold text-center'>Featuring Elvish & Abhishek</h4>
     </div>
   </div>
 
@@ -393,7 +428,7 @@ const Hero = () => {
       textDecorationStyle: 'wavy',
       textDecorationColor: '#3b82f6' 
     }}>
-    YOUR NEXT VIRAL CAMPAIGN
+    YOUR NEXT AD CAMPAIGN
   </span> 🫡
     </h2>
   <p className="text-gray-700">
@@ -416,7 +451,7 @@ const Hero = () => {
   Our Clients
     <img 
     src="/AB(BG).png" 
-    alt="Banrakas" 
+    alt="Arpit Bala" 
     className="w-40 h-30 mt-3"
   />
   <span className="block w-full h-1 bg-green-600 mx-auto mt-2 absolute -bottom-1 left-0"></span>
@@ -451,8 +486,6 @@ const Hero = () => {
     </Marquee>
   </div>
 </div>
-
-
 </section>
 
 <section className="py-16 bg-white">
@@ -510,33 +543,46 @@ const Hero = () => {
 
 {/*Clients Section */}
 
-<section id="contact" className="py-16 bg-white text-center flex items-center justify-between">
-  <div className="w-1/2 p-4">
-    <img 
-      src="/WhatsApp Image 2025-06-09 at 12.21.43 PM.jpeg" 
-      alt="Contact Us Image" 
-  className="w-[80%] rounded-lg border-4 ml-30 border-black-300 shadow-md"/>
-</div>
-<div className="w-1/2 p-4">
-   <h2 className="text-2xl font-bold text-center mb-12 relative inline-block">
-  <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-purple-600">CONTACT US NOW</span>
-  <span className="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-full h-1 bg-red-600 shadow-xl rounded-lg mt-2"></span>
-</h2>
- <p className="text-lg text-gray-700 mb-6">
-   "Don't hesitate to contact us—no ifs, ands, or buts. We've successfully launched many campaigns in the past, and we deliver exceptional services even on a budget. Join us today!"
-   </p>
-<button
-  className="px-6 py-3 bg-blue-600 text-white font-bold rounded-lg transform transition arrow-cursor duration-300 
-             hover:scale-105 hover:shadow-lg hover:shadow-blue-500/50 active:scale-95 active:shadow-none"
-  onClick={() => window.open('https://form.typeform.com/to/Oxph7bfP', '_blank')} >  Get in Touch ls
-</button>
-<img 
-  src="/QR.png" 
-  alt="qr-image" 
-  className="mt-4 mx-auto w-70 h-auto" 
-/>
-</div>
+<section
+  id="contact"
+  className="py-16 bg-white text-center flex flex-col lg:flex-row items-center justify-between"
+>
+  <div className="w-full lg:w-1/2 p-4 flex justify-center">
+    <img
+      src="/WhatsApp Image 2025-06-09 at 12.21.43 PM.jpeg"
+      alt="Contact Us Image"
+      className="w-[80%] max-w-sm rounded-lg border-4 border-black shadow-md"
+    />
+  </div>
+
+  <div className="w-full lg:w-1/2 p-4">
+    <h2 className="text-2xl font-bold text-center mb-12 relative inline-block">
+      <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-purple-600">
+        CONTACT US NOW
+      </span>
+      <span className="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-full h-1 bg-red-600 shadow-xl rounded-lg mt-2"></span>
+    </h2>
+
+    <p className="text-lg text-gray-700 mb-6 px-4 sm:px-8">
+      "Don't hesitate to contact us—no ifs, ands, or buts. We've successfully launched many campaigns in the past, and we deliver exceptional services even on a budget. Join us today!"
+    </p>
+
+    <button
+      className="px-6 py-3 bg-blue-600 text-white font-bold rounded-lg transform transition duration-300 
+                 hover:scale-105 hover:shadow-lg hover:shadow-blue-500/50 active:scale-95 active:shadow-none"
+      onClick={() => window.open('https://form.typeform.com/to/Oxph7bfP', '_blank')}
+    >
+      Get in Touch
+    </button>
+
+    <img
+      src="/QR.png"
+      alt="qr-image"
+      className="mt-6 mx-auto w-40 h-auto"
+    />
+  </div>
 </section>
+
  </div>   
   );
 };
