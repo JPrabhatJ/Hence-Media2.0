@@ -1,4 +1,4 @@
-.services {
+/* .services {
   display: grid;
   font-family: 'Playfair Display', serif;
   grid-template-columns: repeat(3, 1fr);
@@ -13,7 +13,7 @@
 }
 
 .join-hence-section {
-  background-color: #e6f2ff; /* light blue */
+  background-color: #e6f2ff;
   padding: 60px 20px;
   text-align: center;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -53,9 +53,18 @@
 }
 
 .callback-button {
- background-color: aqua;
+  background-color: #0059b3;
+  color: #fff;
+  border: none;
+  padding: 14px 28px;
+  font-size: 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  text-align: center;
+  text-decoration: none;
 }
-/* .request-callback-btn:hover {
+.request-callback-btn:hover {
   background-color: #004080;
   transform: translateY(-2px);
 } */

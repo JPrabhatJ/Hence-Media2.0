@@ -81,7 +81,7 @@ const Hero = () => {
       <li>Trendsetter: Capability to make any content trend in the meme market.</li>
       <li>Diverse Audience: Extensive network across multiple categories and niches.</li>
       <li>Engaging Content: Expertly crafted memes to boost brand visibility and engagement.</li>
-      <li>Proven Impact: Track record of successful campaigns that resonate with audiences.</li>
+      <li>Proven Impact: Track record of successful campaigns that resonates with audiences.</li>
 </ul>
   </div>
   <div className="md:w-1/2 p-4">
