@@ -103,7 +103,7 @@ const Hero = () => {
       <li>Diverse Network: Access to influencers across all categories, including tech, travel, vlogs, art, food, and more.</li>
       <li>High-Impact Collaborations: Partnerships with top-tier influencers to maximize reach and engagement.</li>
       <li>Authentic Content: Focus on creating genuine content that resonates with target audiences.</li>
-      <li>Custom Campaigns: Tailored influencer strategies to align with your brand’s unique goals and messaging.</li>
+      <li>Custom Campaigns: Tailored influencer strategies to align with your brand unique goals and messaging.</li>
  </ul>
   </div>
     <div className="md:w-1/2 p-4">
